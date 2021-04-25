@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#mario_game {
+  width: 500px;
+  height: 200px;
+  background-image: url("game background.png");
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  top: 120px;
+}
+p {
+  text-align: center;
+  position: relative;
+  top: 160px;
+  color: #00cb17;
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  color: #00cb17;
+}
+
+.title small {
+  position: relative;
+  left: 95px;
+}
+
+#mario {
+  width: 40px;
+  height: 70px;
+  background-image: url("mario car.png");
+  position: relative;
+  top: 130px;
+}
+
+.animate {
+  animation: jump 500ms;
+}
+
+@keyframes jump {
+  0% {
+    top: 130px;
+  }
+  30% {
+    top: 80px;
+  }
+  70% {
+    top: 80px;
+  }
+  100% {
+    top: 130px;
+  }
+}
+
+#pipe {
+  width: 40px;
+  height: 40px;
+  background-image: url("mario pipe.png");
+  position: relative;
+  top: 91px;
+  left: 460px;
+  animation: slide 1s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: 480px;
+  }
+  100% {
+    left: -35px;
+  }
+}
